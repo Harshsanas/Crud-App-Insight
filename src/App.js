@@ -1,11 +1,33 @@
-import './App.css';
-import Main from './Components/Main/Main';
+import Navbar from "./Components/Navbar/Navbar";
+import Form from "./Components/Form/Form";
+import List from "./Components/List/List";
+import Table from "./Components/Table/Table";
+import Home from "./Components/Home/Home";
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import PageNotFound from "./Components/PageNotFound";
 
 function App() {
   return (
-    <div className="App">
-    <Main/>
-    </div>
+    <Router>
+      <div style={{fontFamily:"sans-serif"}}>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/Form">
+            <Form />
+          </Route>
+          <Route exact path="/List">
+            <List />
+          </Route>
+          <Route exact path="/Table">
+            <Table />
+          </Route>
+          <Route component={PageNotFound} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
