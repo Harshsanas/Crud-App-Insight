@@ -20,22 +20,6 @@ export default function Navbar() {
           color: black;
         }
       }
-
-      .left-nav {
-        margin-right: 200px;
-        margin-top: 7px;
-
-        .linkbtn {
-          margin-right: 20px;
-          text-decoration: none;
-          color: black;
-        }
-
-        .linkbtn:hover {
-          color: red;
-          text-decoration: underline;
-        }
-      }
     `;
 
     return (
@@ -46,11 +30,6 @@ export default function Navbar() {
               <img src="logoiconsvg.png" alt="img" />
               <p>RSS FEED AGREGATOR</p>
             </NavLink>
-          </div>
-          <div className="left-nav">
-            <NavLink to="/Form" className="linkbtn">Form</NavLink>
-            <NavLink to="/Table" className="linkbtn" >Table</NavLink>
-            <NavLink to="/List" className="linkbtn">List</NavLink>
           </div>
         </NAVBAR>
       </div>
