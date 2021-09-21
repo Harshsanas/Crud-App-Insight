@@ -1,5 +1,8 @@
 # Crud-App-Insight
 
+<img src="./img1.png" alt-"img>
+
+
 # CRUD app using MongoDB, ExpressJS, ReactJS & NodeJS
 
 <h1>TECH STACK</h1>
@@ -16,5 +19,14 @@
 
 # To run frondend npm start
 
-github link 
+# github link 
 # <a href="https://github.com/Harshsanas/Crud-App-Insight.git"> https://github.com/Harshsanas/Crud-App-Insight.git
+  
+# Git Clone https://github.com/Harshsanas/Crud-App-Insight.git
+  
+# cd backend >> npm i >> npm run server
+  
+#..cd npm i
+  
+#npm start http://localhost:3000/
+ 
