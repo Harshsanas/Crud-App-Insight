@@ -8,7 +8,7 @@ router.get('/form', async (req, res)=>{
   try {
     const forms =await Forms.find({}).populate("form").lean().exec()
     res.status(200).json({ forms })
-    console.log(res)
+    // console.log(res)
   } catch (err) {
     res.status(500).json({ status: "failed", err: err.message });
   }
@@ -17,7 +17,7 @@ router.get('/form', async (req, res)=>{
 // to add new forms
 router.post("/form", async (req, res) => {
   const { id,url,name,content} = req.params;
-  console.log(id, url, name, content);
+  // console.log(id, url, name, content);
   try {
     const newforms = await Forms.create(req.body);
     res.status(201).json({ newforms });

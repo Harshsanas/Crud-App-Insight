@@ -3,11 +3,11 @@ import styled from "styled-components"
 import Form from '../Form/Form';
 import Table from "../Table/Table";
 
-export default function Home() {
-
     const HOME = styled.div`
-    display: flex;
+      display: flex;
     `;
+
+export default function Home() {
     return (
       <div>
         <HOME>

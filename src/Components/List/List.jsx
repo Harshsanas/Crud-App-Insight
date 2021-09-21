@@ -3,18 +3,31 @@ import axios from 'axios'
 
 export default function List() {
 
-    const [list,setList]=useState([])
+    const [list,setList]=useState({})
   
 
     useEffect(()=>{
-    const {data} = axios.get("http://localhost:3033/form").then((res) => {
-    // setList(...data,data)
-    console.log({data});
+    axios
+    .get("http://localhost:3033/form")
+    .then((res) => {
+    setList(res.data.forms)
+    console.log(res.data.forms)
    })
    .catch((err) => console.log(err));
-    },[])
+    })
     return (
-        <div>
-        </div>
-    )
+      <>
+        {list.map((item) => {
+          return (
+            <div>
+              <span>
+                {item.names}
+                {item.url}
+                {item.content}
+              </span>
+            </div>
+          );
+        })}
+      </>
+    );
 }

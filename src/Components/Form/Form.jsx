@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import styled from "styled-components"
 
-export default function Form() {
   const FORMDATA = styled.div`
     margin: 50px 20px;
 
@@ -30,9 +29,8 @@ export default function Form() {
     }
   `;
 
-  // const [url,setUrl]=useState()
-  // const [name,setName]=useState()
-  // const [content, setContent]=useState()
+export default function Form() {
+
   const[form,setForm]=useState({})
 
   console.log(form)
@@ -52,15 +50,15 @@ export default function Form() {
   //  content:"Portfolio" 
   // }
 
-  const handleSubmit =(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    alert("working");
     console.log(form)
 
     axios
       .post("http://localhost:3033/form",form)
       .then((res) => {
-        console.log(form)
+        // console.log(form)
+        console.log(res)
       })
       .catch((err) => console.log(err))
 
@@ -70,12 +68,11 @@ export default function Form() {
         <FORMDATA>
           <h2>ADD FEED DETAILS</h2>
           <form onSubmit={handleSubmit}>
-          <p>Feed Name</p>
+            <p>Feed Name</p>
             <input
               type="text"
               placeholder="Enter Name"
               name="name"
-              value={form.name}
               onChange={handleChange}
             />
             <p>Feed URL</p>
@@ -93,7 +90,7 @@ export default function Form() {
               onChange={handleChange}
             />
             <br />
-            <button type="submit">ADD URL</button>
+            <button>ADD URL</button>
           </form>
         </FORMDATA>
       </div>
