@@ -17,4 +17,4 @@
 # To run frondend npm start
 
 # github link 
-<a href="https://github.com/Harshsanas/Crud-App-Insight.git">
+# <a href="https://github.com/Harshsanas/Crud-App-Insight.git"> https://github.com/Harshsanas/Crud-App-Insight.git
