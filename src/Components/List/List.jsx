@@ -11,7 +11,7 @@ export default function List() {
     .get("http://localhost:3033/form")
     .then((res) => {
     setList(res.data.forms)
-    console.log(res.data.forms)
+    // console.log(res.data.forms)
    })
    .catch((err) => console.log(err));
     })
@@ -21,7 +21,7 @@ export default function List() {
           return (
             <div>
               <span>
-                {item.names}
+                {item.name}
                 {item.url}
                 {item.content}
               </span>
