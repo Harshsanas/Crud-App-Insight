@@ -18,3 +18,12 @@
 
 # github link 
 # <a href="https://github.com/Harshsanas/Crud-App-Insight.git"> https://github.com/Harshsanas/Crud-App-Insight.git
+  
+# Git Clone https://github.com/Harshsanas/Crud-App-Insight.git
+  
+# cd backend >> npm i >> npm run server
+  
+#..cd npm i
+  
+#npm start http://localhost:3000/
+ 
