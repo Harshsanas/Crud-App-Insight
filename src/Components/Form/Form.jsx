@@ -33,7 +33,7 @@ export default function Form() {
 
   const[form,setForm]=useState({})
 
-  console.log(form)
+  // console.log(form)
 
   const handleChange=(e)=>{
     const {name,value}=e.target;
@@ -44,15 +44,10 @@ export default function Form() {
     setForm(payload);
   }
 
-  // const obj={
-  //  name:"Harshit",
-  //  url:"hari@gmail.com",
-  //  content:"Portfolio" 
-  // }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form)
+    // console.log(form)
 
     axios
       .post("http://localhost:3033/form",form)
@@ -74,6 +69,7 @@ export default function Form() {
               placeholder="Enter Name"
               name="name"
               onChange={handleChange}
+              required
             />
             <p>Feed URL</p>
             <input
@@ -81,6 +77,7 @@ export default function Form() {
               placeholder="Enter URL"
               name="url"
               onChange={handleChange}
+              required
             />
             <p>Feed Content</p>
             <input
@@ -88,6 +85,7 @@ export default function Form() {
               placeholder="Enter Content"
               name="content"
               onChange={handleChange}
+              required
             />
             <br />
             <button>ADD URL</button>

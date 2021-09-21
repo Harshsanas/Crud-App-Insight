@@ -5,17 +5,17 @@ import PageNotFound from "./Components/PageNotFound";
 
 function App() {
   return (
-    <Router>
-      <div style={{fontFamily:"sans-serif"}}>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route component={PageNotFound} />
-        </Switch>
-      </div>
-    </Router>
+      <Router>
+        <div style={{ fontFamily: "sans-serif" }}>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route component={PageNotFound} />
+          </Switch>
+        </div>
+      </Router>
   );
 }
 
