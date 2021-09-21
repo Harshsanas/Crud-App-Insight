@@ -26,7 +26,5 @@
   
 # cd backend >> npm i >> npm run server
   
-# ..cd npm i
-  
-# npm start http://localhost:3000/
+# for start application >> ..cd npm i >> npm start http://localhost:3000/
  
