@@ -1,6 +1,6 @@
 # Crud-App-Insight
 
-<img src="img1.png" alt-"img>
+<img src="img1.png" alt-"img"/>
 
 
 # CRUD app using MongoDB, ExpressJS, ReactJS & NodeJS
