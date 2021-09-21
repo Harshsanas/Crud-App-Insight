@@ -6,12 +6,10 @@ import Table from "../Table/Table";
 export default function Home() {
 
     const HOME = styled.div`
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     `;
     return (
       <div>
-        <h1 style={{textAlign: 'center'}}>WELCOME TO RSS FEED AGREGATOR</h1>
         <HOME>
           <div>
             <Form />
